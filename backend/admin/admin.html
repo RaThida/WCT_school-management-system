@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            margin: 2rem auto;
+            max-width: 1200px;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color: #333;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Admin Panel</h1>
+</div>
+
+<div class="container">
+
+    <!-- User, Academy, Department Management -->
+    <div class="section">
+        <h2>User, Academy, Department Management</h2>
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input type="text" id="username" placeholder="Enter user name">
+        </div>
+        <div class="form-group">
+            <label for="academy">Academy</label>
+            <input type="text" id="academy" placeholder="Enter academy name">
+        </div>
+        <div class="form-group">
+            <label for="department">Department</label>
+            <input type="text" id="department" placeholder="Enter department">
+        </div>
+        <div class="form-group">
+            <button>Save</button>
+        </div>
+    </div>
+
+    <!-- Subject Management -->
+    <div class="section">
+        <h2>Subject Management</h2>
+        <div class="form-group">
+            <label for="subject">Subject Name</label>
+            <input type="text" id="subject" placeholder="Enter subject name">
+        </div>
+        <div class="form-group">
+            <button>Save</button>
+        </div>
+    </div>
+
+    <!-- Teacher Management -->
+    <div class="section">
+        <h2>Teacher Management</h2>
+        <div class="form-group">
+            <label for="teacher">Teacher Name</label>
+            <input type="text" id="teacher" placeholder="Enter teacher name">
+        </div>
+        <div class="form-group">
+            <button>Save</button>
+        </div>
+    </div>
+
+    <!-- Shift and Schedule Management -->
+    <div class="section">
+        <h2>Shift and Schedule Management</h2>
+        <div class="form-group">
+            <label for="shift">Shift</label>
+            <select id="shift">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button>Save</button>
+        </div>
+    </div>
+
+    <!-- Search and Filtering -->
+    <div class="section">
+        <h2>Search and Filtering</h2>
+        <div class="form-group">
+            <label for="search">Search</label>
+            <input type="text" id="search" placeholder="Enter search term">
+        </div>
+        <div class="form-group">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- Secure Data Handling -->
+    <div class="section">
+        <h2>Secure Data Handling</h2>
+        <p>Ensure all sensitive data is encrypted and handled securely on the server side.</p>
+    </div>
+
+    <!-- Notifications -->
+    <div class="section">
+        <h2>Notifications</h2>
+        <div class="form-group">
+            <label for="notification">Notification Message</label>
+            <input type="text" id="notification" placeholder="Enter notification message">
+        </div>
+        <div class="form-group">
+            <button>Send Notification</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
